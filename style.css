@@ -37,7 +37,8 @@ html {
 
 .navbar {
   border-top: 2px solid #f44336;
-  z-index: 2;
+  z-index: 5;
+  width: 100%;
 }
 
 .brand-logo {
@@ -83,8 +84,9 @@ html {
   min-width: 590px;
   height: 100%;
   z-index: 1;
-  top: 80px;
+  top: 0;
   right: 0;
+  padding-top: 5rem;
 }
 
 .carousel-text div {
@@ -101,15 +103,16 @@ html {
 .carousel-text p {
   font-size: 24px;
   letter-spacing: 2px;
+  padding: 0 1rem;
 }
 
-.carousel-text button {
+.carousel-text a {
   color: #ffffff;
   background-color: #f44336;
   transition: all 1s ease;
 }
 
-.carousel-text button:hover {
+.carousel-text a:hover {
   background-color: #ff9800;
 }
 
@@ -224,7 +227,6 @@ html {
 /* Service Section */
 .service-section {
   background-color: #f44336;
-  height: 35vh;
 }
 
 .service-section .service-left {
@@ -314,6 +316,18 @@ html {
   font-size: 16px;
 }
 
+/* Map
+.map{
+  animation-name: map;
+  animation: 1s;
+}
+
+@keyframes map {
+  0% {
+    transform: translateY(10px);
+  }
+} */
+
 /* Footer */
 footer {
   background-color: #302d28;
@@ -343,10 +357,6 @@ footer p strong {
     margin-top: 3rem;
   }
 
-  .service-section {
-    height: 50vh;
-  }
-
   .pricing .pricing-cards .card {
     width: 100%;
   }
@@ -365,8 +375,36 @@ footer p strong {
   }
 }
 
-@media (max-width: 550px) {
+/* @media (max-width: 550px) {
   .carousel-text {
     width: 100%;
+  }
+
+} */
+
+@media (max-width: 580px) {
+  .navbar {
+    width: 100vw;
+  }
+
+  .team .cards .card .links {
+    flex-direction: column;
+  }
+
+  .team .cards .card .links i {
+    margin-bottom: 1rem;
+    width: 200px;
+    padding: 1rem 0;
+  }
+
+  .carousel-text {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 321px) {
+  .pricing .pricing-cards .card h1 {
+    font-size: 22px;
+    letter-spacing: 1px;
   }
 }
