@@ -1,3 +1,5 @@
+AOS.init();
+
 const navbarToggler = document.querySelector('.navbar-toggler');
 const navbarTogglerIcon = document.querySelector('.toggler-icon');
 const body = document.querySelector('.body');
