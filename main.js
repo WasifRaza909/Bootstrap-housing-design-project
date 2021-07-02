@@ -19,7 +19,7 @@ navbarToggler.addEventListener('click', function () {
     navbarTogglerIcon.style.paddingBottom = '0rem';
     navbarTogglerIcon.style.marginLeft = '5rem';
     navbarTogglerIcon.style.marginBottom = '0.2rem';
-    // navLinks.style.textAlign = 'center';
+ 
 
     body.style.opacity = 1;
   } else {
@@ -33,26 +33,6 @@ navbarToggler.addEventListener('click', function () {
   }
 });
 
-// if (!navToggle) {
-// }
-// if (navToggle) {
-//   console.log('WORLD');
-// }
-
-// navbarToggler.addEventListener('click', function () {
-//   navToggle = true;
-//   // navbarTogglerIcon.classList.remove('fa-bars');
-//   // navbarTogglerIcon.classList.add('fa-times');
-//   // navbarTogglerIcon.style.paddingBottom = '1.5rem';
-//   // navbarTogglerIcon.style.paddingLeft = '5rem';
-//   // navLinks.style.textAlign = 'center';
-
-//   // navToggle = true;
-// });
-
-// if (!navToggle) {
-//   navbarToggler.addEventListener('click', function () {});
-// }
 
 document.addEventListener('click', (e) => {
   const activeNavLink = document.querySelector('.active');
